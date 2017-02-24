@@ -1,8 +1,8 @@
 {%set name = "multipledispatch" %}
-{%set version = "0.4.8" %}
+{%set version = "0.4.9" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "07d41fb3ed25e8424536e48a8566f88a0f9926ca4b6174bff6aa16c98251b92e" %}
+{%set hash_val = "bda6abb8188d9abb429bd17ed15bc7433f77f1b05a78cfff761711ed81daa7a2" %}
 {%set build_num = "0" %}
 
 package:
@@ -31,13 +31,13 @@ test:
     - multipledispatch
 
 about:
-  home: http://github.com/mrocklin/multipledispatch/
+  home: https://github.com/mrocklin/multipledispatch/
   license: BSD 3-Clause
   # license_file: No MANIFEST.in
   license_family: BSD
   summary: 'Multiple dispatch'
   doc_url: https://multiple-dispatch.readthedocs.io
-  dev_url: http://github.com/mrocklin/multipledispatch/
+  dev_url: https://github.com/mrocklin/multipledispatch/
 
 extra:
   recipe-maintainers:

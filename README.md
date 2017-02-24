@@ -1,7 +1,7 @@
 About multipledispatch
 ======================
 
-Home: http://github.com/mrocklin/multipledispatch/
+Home: https://github.com/mrocklin/multipledispatch/
 
 Package license: BSD 3-Clause
 
@@ -10,6 +10,18 @@ Feedstock license: BSD 3-Clause
 Summary: Multiple dispatch
 
 
+
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/multipledispatch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/multipledispatch-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/multipledispatch-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/multipledispatch-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/multipledispatch-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/multipledispatch-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multipledispatch/badges/version.svg)](https://anaconda.org/conda-forge/multipledispatch)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multipledispatch/badges/downloads.svg)](https://anaconda.org/conda-forge/multipledispatch)
 
 Installing multipledispatch
 ===========================
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `multipledispatch` available on yo
 ```
 conda search multipledispatch --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/multipledispatch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/multipledispatch-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/multipledispatch-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/multipledispatch-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/multipledispatch-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/multipledispatch-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multipledispatch/badges/version.svg)](https://anaconda.org/conda-forge/multipledispatch)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multipledispatch/badges/downloads.svg)](https://anaconda.org/conda-forge/multipledispatch)
 
 
 Updating multipledispatch-feedstock
