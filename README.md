@@ -14,14 +14,16 @@ Summary: Multiple dispatch
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/multipledispatch-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/multipledispatch-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/multipledispatch-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/multipledispatch-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/multipledispatch-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/multipledispatch-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/multipledispatch-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/multipledispatch-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/multipledispatch-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/multipledispatch-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/multipledispatch-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/multipledispatch-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multipledispatch/badges/version.svg)](https://anaconda.org/conda-forge/multipledispatch)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/multipledispatch/badges/downloads.svg)](https://anaconda.org/conda-forge/multipledispatch)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-multipledispatch-green.svg)](https://anaconda.org/conda-forge/multipledispatch) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/multipledispatch.svg)](https://anaconda.org/conda-forge/multipledispatch) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/multipledispatch.svg)](https://anaconda.org/conda-forge/multipledispatch) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/multipledispatch.svg)](https://anaconda.org/conda-forge/multipledispatch) |
 
 Installing multipledispatch
 ===========================
