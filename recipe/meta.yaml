@@ -16,11 +16,10 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - pip
     - python
     - six
-    - setuptools
 
   run:
     - python
