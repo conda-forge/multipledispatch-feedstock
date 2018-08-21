@@ -1,14 +1,12 @@
 {% set name = "multipledispatch" %}
 {% set version = "0.6.0" %}
-{% set package = name + "-" + version + ".tar.gz" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ package }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ package }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ package }}
   sha256: a7ab1451fd0bf9b92cab3edbd7b205622fb767aeefb4fb536c2e3de9e0a38bea
 
 build:
