@@ -1,30 +1,29 @@
-{%set name = "multipledispatch" %}
-{%set version = "0.5.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "9e92d63efad2c9b68562175d9148d8cb32d04bf5557991190e643749bf4ed954" %}
-{%set build_num = "0" %}
+{% set name = "multipledispatch" %}
+{% set version = "0.6.0" %}
+{% set package = name + "-" + version + ".tar.gz" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ package }}
+  sha256: a7ab1451fd0bf9b92cab3edbd7b205622fb767aeefb4fb536c2e3de9e0a38bea
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
+    - pip
     - python
-    - setuptools
+    - six
 
   run:
     - python
+    - six
 
 test:
   imports:
@@ -42,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - cpcloud
