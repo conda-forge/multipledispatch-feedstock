@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/mrocklin/multipledispatch/
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   # license_file: No MANIFEST.in
   license_family: BSD
   summary: 'Multiple dispatch'
