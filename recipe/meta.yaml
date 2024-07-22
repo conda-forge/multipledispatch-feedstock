@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=2.7
     - six
 
   run:
-    - python >=3.6
+    - python >=2.7
     - six
 
 test:
