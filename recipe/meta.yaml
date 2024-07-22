@@ -7,7 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ package }}
+  url: https://raw.githubusercontent.com/conda-forge/multipledispatch-feedstock/{{ version }}/LICENSE.txt
+  fn: LICENSE.txt
   sha256: a7ab1451fd0bf9b92cab3edbd7b205622fb767aeefb4fb536c2e3de9e0a38bea
 
 build:
@@ -32,7 +33,7 @@ test:
 about:
   home: https://github.com/mrocklin/multipledispatch/
   license: BSD-3-Clause
-  # license_file: No MANIFEST.in
+  license_file: LICENSE.txt
   license_family: BSD
   summary: 'Multiple dispatch'
   doc_url: https://multiple-dispatch.readthedocs.io
