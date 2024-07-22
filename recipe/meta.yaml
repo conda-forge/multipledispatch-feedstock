@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.6
     - six
 
   run:
-    - python >=2.7
+    - python >=3.6
     - six
 
 test:
@@ -32,7 +32,7 @@ test:
 about:
   home: https://github.com/mrocklin/multipledispatch/
   license: BSD-3-Clause
-  license_file: LICENSE.txt
+  # license_file: No MANIFEST.in
   license_family: BSD
   summary: 'Multiple dispatch'
   doc_url: https://multiple-dispatch.readthedocs.io
