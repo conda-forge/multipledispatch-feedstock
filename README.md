@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@cpcloud](https://github.com/cpcloud/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 
-
-<!-- dummy commit to enable rerendering -->
-
