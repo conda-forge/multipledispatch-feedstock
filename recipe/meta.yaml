@@ -14,21 +14,23 @@ source:
     sha256: 8767c8a56a24a69d4bf42561c408bdf3e3ffa40699989aec50b96f4b4351efd9
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - six
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - six
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - multipledispatch
 
