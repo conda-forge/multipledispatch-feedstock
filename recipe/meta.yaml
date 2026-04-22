@@ -1,5 +1,5 @@
 {% set name = "multipledispatch" %}
-{% set version = "0.6.0" %}
+{% set version = "1.0.0" %}
 {% set package = name + "-" + version + ".tar.gz" %}
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ package }}
-    sha256: a7ab1451fd0bf9b92cab3edbd7b205622fb767aeefb4fb536c2e3de9e0a38bea
+    sha256: 5c839915465c68206c3e9c473357908216c28383b425361e5d144594bf85a7e0
   - url: https://raw.githubusercontent.com/mrocklin/multipledispatch/{{ version }}/LICENSE.txt
     fn: LICENSE.txt
     sha256: 8767c8a56a24a69d4bf42561c408bdf3e3ffa40699989aec50b96f4b4351efd9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
