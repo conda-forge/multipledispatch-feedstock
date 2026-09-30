@@ -1,21 +1,18 @@
 schema_version: 1
 
 context:
-  version: "0.6.0"
+  version: "1.0.0"
 
 package:
   name: multipledispatch
   version: ${{ version }}
 
 source:
-  - url: https://files.pythonhosted.org/packages/source/m/multipledispatch/multipledispatch-${{ version }}.tar.gz
-    sha256: a7ab1451fd0bf9b92cab3edbd7b205622fb767aeefb4fb536c2e3de9e0a38bea
-  - url: https://raw.githubusercontent.com/mrocklin/multipledispatch/${{ version }}/LICENSE.txt
-    sha256: 8767c8a56a24a69d4bf42561c408bdf3e3ffa40699989aec50b96f4b4351efd9
-    file_name: LICENSE.txt
+  url: https://files.pythonhosted.org/packages/source/m/multipledispatch/multipledispatch-${{ version }}.tar.gz
+  sha256: 5c839915465c68206c3e9c473357908216c28383b425361e5d144594bf85a7e0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
@@ -24,7 +21,6 @@ requirements:
     - pip
     - python ${{ python_min }}.*
     - setuptools
-    - six
   run:
     - python >=${{ python_min }}
     - six
