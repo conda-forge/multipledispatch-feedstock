@@ -8,8 +8,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/m/multipledispatch/multipledispatch-${{ version }}.tar.gz
-  sha256: 5c839915465c68206c3e9c473357908216c28383b425361e5d144594bf85a7e0
+  url: https://github.com/mrocklin/multipledispatch/archive/${{ version }}.tar.gz
+  sha256: a9eb21390e5051ce28b2ee7acd02bb21885b9e2a4ce6e5fdbb1f338b48b54203
 
 build:
   number: 0
@@ -33,6 +33,15 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "*"
+  - requirements:
+      run:
+        - pytest
+        - pytest-benchmark
+    files:
+      source:
+        - multipledispatch/tests/
+    script:
+      - pytest -vv
 
 about:
   license: BSD-3-Clause
